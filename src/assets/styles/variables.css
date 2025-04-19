@@ -1,0 +1,26 @@
+/* variables.css */
+:root {
+    /* Colores */
+    --color-fondo: #FFFFFF;            /* Fondo principal */
+    --color-acento: #008080;           /* Color primario para botones, enlaces y elementos destacados */
+    --color-texto: #333333;            /* Color del texto principal */
+    --color-light: #e0f7fa;            /* Color claro para fondos de tarjetas y elementos secundarios */
+    --color-hover: #005757;            /* Color para hover en botones y enlaces */
+  
+    /* Tipografía */
+    --font-family-base: 'Roboto', sans-serif;
+    --font-size-base: 16px;
+    --font-size-heading: 32px;         /* Para saludos o encabezados principales */
+    --font-size-subheading: 24px;      /* Para títulos de secciones o subtítulos */
+    --font-size-paragraph: 16px;       /* Texto general */
+    --font-size-small: 14px;           /* Texto de soporte o notas */
+  
+    /* Espaciados y dimensiones */
+    --padding-base: 20px;
+    --margin-base: 20px;
+    --border-radius: 4px;
+  
+    /* Transiciones */
+    --transition-speed: 0.3s;
+  }
+  

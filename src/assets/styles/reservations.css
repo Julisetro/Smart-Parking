@@ -1,0 +1,135 @@
+/* reservations.css */
+
+/* Contenedor general de la página de Reservas */
+.reservations {
+    padding: var(--padding-base);
+    background-color: #f7f7f7; /* Fondo ligeramente gris para resaltar el contenido */
+  }
+  
+  /* Sección de Introducción */
+  .intro {
+    margin-bottom: var(--margin-base);
+    text-align: center;
+  }
+  
+  .intro h1 {
+    font-size: var(--font-size-heading); /* Ej: 32px */
+    margin-bottom: 10px;
+    color: var(--color-texto);
+  }
+  
+  .intro p {
+    font-size: var(--font-size-paragraph); /* Ej: 16px */
+    line-height: 1.5;
+    color: var(--color-texto);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Sección de Promociones (visible solo si hay promoción activa) */
+  .promotions {
+    background-color: var(--color-light);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-base);
+    text-align: center;
+  }
+  
+  .promotions h2 {
+    font-size: var(--font-size-subheading); /* Ej: 24px */
+    margin-bottom: 10px;
+    color: var(--color-acento);
+  }
+  
+  .promotions p {
+    font-size: var(--font-size-paragraph);
+    color: var(--color-texto);
+  }
+  
+  /* Botón para abrir el formulario de reserva */
+  .open-reservation-form {
+    display: block;
+    margin: 0 auto var(--margin-base);
+    background-color: var(--color-acento);
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: var(--font-size-paragraph);
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .open-reservation-form:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* Sección de Reserva Realizada */
+  .reservation-details {
+    margin-bottom: var(--margin-base);
+  }
+  
+  .reservation-details h2 {
+    font-size: var(--font-size-subheading);
+    margin-bottom: 10px;
+    color: var(--color-texto);
+    text-align: center;
+  }
+  
+  .reservation-card {
+    background-color: var(--color-fondo);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .reservation-card p {
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 8px;
+    color: var(--color-texto);
+  }
+  
+  .reservation-card button.view-qr {
+    display: block;
+    margin: 10px auto 0;
+    background-color: var(--color-acento);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: var(--font-size-paragraph);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .reservation-card button.view-qr:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* Sección de Estado del Parqueadero */
+  .parking-status {
+    background-color: var(--color-fondo);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .parking-status h2 {
+    font-size: var(--font-size-subheading);
+    margin-bottom: 10px;
+    color: var(--color-texto);
+  }
+  
+  .parking-status p {
+    font-size: var(--font-size-paragraph);
+    margin: 5px 0;
+    color: var(--color-texto);
+  }
+  

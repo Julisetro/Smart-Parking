@@ -1,0 +1,137 @@
+/* reservation-history.css */
+
+/* Asegurar que el contenedor principal ocupe toda la altura de la pantalla */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main.reservation-history {
+    flex: 1; /* Permite que el contenido principal ocupe el espacio disponible */
+}
+
+/* Footer fijo en la parte inferior */
+footer {
+    background-color: var(--color-fondo);
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    color: var(--color-texto);
+    font-size: var(--font-size-small);
+}
+
+/* Contenedor general de la página */
+.reservation-history {
+    padding: var(--padding-base);
+    background-color: #f7f7f7;
+  }
+  
+  /* Sección de Título e Introducción */
+  .reservation-history .intro {
+    text-align: center;
+    margin-bottom: var(--margin-base);
+  }
+  
+  .reservation-history .intro h1 {
+    font-size: var(--font-size-heading);
+    margin-bottom: 10px;
+    color: var(--color-texto);
+  }
+  
+  .reservation-history .intro p {
+    font-size: var(--font-size-paragraph);
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-texto);
+  }
+  
+  /* Listado de Reservas */
+  .reservation-history .reservations-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .reservation-history .reservations-list li.reservation-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-fondo);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Información de cada reserva */
+  .reservation-history .reservations-list li .reservation-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reservation-history .reservations-list li .reservation-date {
+    font-size: var(--font-size-subheading);
+    font-weight: bold;
+    color: var(--color-texto);
+  }
+  
+  .reservation-history .reservations-list li .reservation-month {
+    font-size: var(--font-size-paragraph);
+    color: var(--color-texto);
+  }
+  
+  .reservation-history .reservations-list li .reservation-time {
+    font-size: var(--font-size-paragraph);
+    color: var(--color-texto);
+    margin-top: 5px;
+  }
+  
+  /* Botón para ver detalles de reserva */
+  .reservation-history .reservations-list li .view-details {
+    background-color: var(--color-acento);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .reservation-history .reservations-list li .view-details:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* Mensaje informativo en caso de no haber reservas */
+  .reservation-history .no-reservations {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--color-texto);
+    font-size: var(--font-size-paragraph);
+  }
+  
+  /* Paginación */
+  .reservation-history .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .reservation-history .pagination button {
+    background-color: var(--color-acento);
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: var(--border-radius);
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .reservation-history .pagination button:hover {
+    background-color: var(--color-hover);
+  }
+
+

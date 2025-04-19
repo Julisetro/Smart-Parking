@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Iniciar Sesión</title>
+  <!-- Hojas de estilo globales y específicas -->
+  <link rel="stylesheet" href="../assets/styles/variables.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/login.css">
+  <link rel="stylesheet" href="../assets/styles/footer.css">
+  <!-- Fuente Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Contenedor principal para centrar el contenido de login -->
+  <div class="login-container">
+    <div class="login-logo">
+      <img src="../assets/images/logo.png" alt="Smart Parking Logo">
+    </div>
+
+    <!-- Tarjeta de formulario de login -->
+    <div class="login-card">
+      <h1>Iniciar Sesión</h1>
+      <form id="login-form" action="dashboard.html" method="post">
+        <div class="form-group">
+          <label for="user-identifier">Correo electrónico</label>
+          <input type="text" id="user-identifier" name="user-identifier" placeholder="Ingresa tu correo" required>
+        </div>
+        <div class="form-group">
+          <label for="user-password">Contraseña</label>
+          <input type="password" id="user-password" name="user-password" placeholder="Ingresa tu contraseña" required>
+        </div>
+        <div class="form-options">
+          <div class="checkbox-group">
+            <input type="checkbox" id="remember-me" name="remember-me">
+            <label for="remember-me">Recordarme</label>
+          </div>
+          <div class="help-links">
+            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            <a href="register.html" class="create-account">Crear cuenta</a>
+          </div>
+        </div>
+        <button type="submit" class="login-button">Iniciar Sesión</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

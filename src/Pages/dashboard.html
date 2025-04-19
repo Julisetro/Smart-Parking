@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Dashboard</title>
+  <!-- Estilos globales y específicos -->
+  <link rel="stylesheet" href="../assets/styles/variables.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/dashboard.css">
+  <link rel="stylesheet" href="/src/assets/styles/footer.css"
+  <!-- Fuente Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Se carga el header desde un archivo externo -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('../components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error al cargar el header:', error));
+  </script>
+
+  <!-- Contenido principal del Dashboard -->
+  <main class="dashboard">
+    <section class="hero">
+      <!-- Área de Perfil -->
+      <div class="profile-area">
+        <h1 class="greeting">Bienvenido, [Nombre]</h1>
+        <p class="id-number">C.C: [Número de Cédula]</p>
+        <a href="profile-settings.html" class="profile-settings">Configurar Perfil</a>
+      </div>
+      <!-- Área de Resumen de Actividad y CTA -->
+      <div class="activity-summary">
+        <div class="activity-card">
+          <h2>Próxima Reserva</h2>
+          <p class="reservation-info">Fecha: [Fecha] | Hora: [Hora]</p>
+        </div>
+        <!-- Botón de llamada a la acción para realizar una reserva -->
+        <button class="cta-reserve">Realizar Reserva</button>
+      </div>
+    </section>
+
+    <!-- Área de Notificaciones -->
+    <section class="notifications">
+      <h2>Notificaciones</h2>
+      <ul>
+        <li>Actualización de precios: Nuevo precio vigente.</li>
+        <li>Cambio de horario: El parqueadero estará cerrado mañana.</li>
+        <li>Recordatorio: Tienes una reserva hoy a las [Hora].</li>
+      </ul>
+    </section>
+
+    <!-- Área de Horario de Funcionamiento -->
+    <section class="operating-hours">
+      <h2>Horario de Funcionamiento</h2>
+      <p>Abierto: 06:00 - 22:00 hrs</p>
+      <p class="status">Estado: <span class="open-status">Abierto</span></p>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(console.error);
+  </script>
+
+  <!-- Archivo JavaScript principal -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

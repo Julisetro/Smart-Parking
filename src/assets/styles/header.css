@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF; /* Fondo del cuerpo de la página */
+  }
+  
+  header {
+    width: 100%;
+    background-color: #008080; /* Color de acento para el header */
+    border-bottom: 1px solid #E0E0E0;
+  }
+  
+  /* Estilos para el texto "Smart Parking" */
+.brand-text {
+    font-size: 32px; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    color: #FFFFFF; /* Color del texto */
+    margin-left: 10px; /* Espaciado entre el logo y el texto */
+    text-transform: uppercase; /* Transformar texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+  .header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    height: 80px;  /* Altura para escritorio */
+    box-sizing: border-box;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: #FFFFFF; /* Texto en blanco para buen contraste */
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 40px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-links a:hover {
+    color: #B2DFDB; /* Un tono más claro de verde azulado en hover */
+  }
+  
+  /* Ajustes para dispositivos móviles */
+  @media (max-width: 768px) {
+    .header-container {
+      height: 70px;
+      padding: 0 15px;
+    }
+    .brand-text {
+        font-size: 20px; /* Reducir tamaño del texto en pantallas pequeñas */
+    }
+    .logo img {
+      height: 40px;
+    }
+    .nav-links a {
+      font-size: 14px;
+      margin-left: 40px;
+    }
+    .nav-links a:first-child {
+      margin-left: 0;
+    }
+  }
+  

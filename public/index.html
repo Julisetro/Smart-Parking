@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Parking</title>
+  <link rel="stylesheet" href="/src/assets/styles/variables.css">
+  <link rel="stylesheet" href="/src/assets/styles/main.css">
+  <link rel="stylesheet" href="/src/assets/styles/index.css">
+  <link rel="stylesheet" href="/src/assets/styles/footer.css">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="/src/assets/images/logo.png" alt="Smart Parking Logo" class="logo-img">
+      <h1>Smart Parking</h1>
+    </div>
+  </header>
+
+  <main class="landing">
+    <h2>Bienvenido a Smart Parking</h2>
+    <p>Gestiona tus reservas de estacionamiento de forma sencilla y rápida.</p>
+    <div class="landing-buttons">
+      <a href="/src/Pages/login.html" class="btn">Iniciar Sesión</a>
+      <a href="/src/Pages/register.html" class="btn">Registrarse</a>
+    </div>
+  </main>
+
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('/src/components/footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(console.error);
+  </script>
+</body>
+</html>

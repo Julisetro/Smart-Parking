@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking - Reservas</title>
+  <!-- Estilos globales y específicos -->
+  <link rel="stylesheet" href="../assets/styles/variables.css">
+  <link rel="stylesheet" href="../assets/styles/main.css">
+  <link rel="stylesheet" href="../assets/styles/reservations.css">
+  <link rel="stylesheet" href="../assets/styles/overlays.css">
+  <link rel="stylesheet" href="../assets/styles/footer.css">
+  <!-- Fuente Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    fetch('../components/header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      })
+      .catch(error => console.error('Error al cargar el header:', error));
+  </script>
+
+  <!-- Contenido principal de la página de Reservas -->
+  <main class="reservations">
+    <!-- Sección de Título e Introducción -->
+    <section class="intro">
+      <h1>Reserva tu Espacio</h1>
+      <p>
+        Seleccione la fecha y la hora de inicio para su reserva. La hora final se calculará automáticamente en el sitio.
+        Tenga en cuenta que si, pasados 15 minutos desde la hora de reserva, el código generado no es escaneado, la reserva se cancelará automáticamente.
+      </p>
+    </section>
+
+    <!-- Sección de Promociones solo cuando esten disponibles -->
+    <section class="promotions" id="promotion-section" style="display: none;">
+      <h2>Promoción Activa</h2>
+      <p>¡Aprovecha un 10% de descuento en tu reserva!</p>
+    </section>
+
+    <!-- Botón para abrir el formulario de reserva -->
+    <button class="open-reservation-form">Hacer Reserva</button>
+
+    <!-- Ejemplo de Reserva Realizada -->
+    <section class="reservation-details">
+      <h2>Reserva Realizada</h2>
+      <div class="reservation-card">
+        <p><strong>Fecha:</strong> 2025-04-01</p>
+        <p><strong>Hora de inicio:</strong> 08:00</p>
+        <p><strong>Tarifa:</strong> $5,000 COP/h</p>
+        <button class="view-qr">Ver Código QR</button>
+      </div>
+    </section>
+
+    <!-- Área Informativa sobre el Estado del Parqueadero -->
+    <section class="parking-status">
+      <h2>Estado del Parqueadero</h2>
+      <p><strong>Horario:</strong> 06:00 - 22:00 hrs</p>
+      <p><strong>Disponibilidad:</strong> Espacios disponibles</p>
+      <p><strong>Tarifa:</strong> $5,000 COP/h</p>
+    </section>
+  </main>
+
+  <!-- Placeholder para cargar los overlays dinámicamente -->
+  <div id="reservation-form-overlay-placeholder"></div>
+  <div id="reservation-summary-overlay-placeholder"></div>
+  <div id="message-overlay-placeholder"></div>
+  <div id="qr-code-overlay-placeholder"></div>
+  
+  <div id="footer-placeholder"></div>
+  <script>
+    fetch('../components/footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById('footer-placeholder').innerHTML = html;
+      })
+      .catch(console.error);
+  </script>
+
+  <!-- Archivo JavaScript específico para la página de Reservas -->
+  <script src="../js/reservations.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="../js/qr-code.js"></script>
+</body>
+</html>

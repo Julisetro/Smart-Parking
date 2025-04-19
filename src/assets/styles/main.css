@@ -1,0 +1,74 @@
+/* main.css */
+
+/* Reset básico para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos globales para el cuerpo de la página */
+  body {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+  }
+  
+  /* Estilos generales para enlaces */
+  a {
+    color: var(--color-acento);
+    text-decoration: none;
+    transition: color var(--transition-speed);
+  }
+  
+  a:hover {
+    color: var(--color-hover);
+  }
+  
+  /* Estilos para encabezados (h1 a h6) */
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin-bottom: var(--margin-base);
+  }
+  
+  /* Estilos para párrafos */
+  p {
+    margin-bottom: var(--margin-base);
+  }
+  
+  /* Clase contenedora para centrar el contenido */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Estilos para imágenes responsivas */
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Estilos globales para botones */
+  button {
+    font-family: var(--font-family-base);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: background-color var(--transition-speed);
+  }
+  
+  /* Estilos para formularios y elementos interactivos (puedes ampliarlos según necesidad) */
+  input, textarea, select {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-base);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-base);
+  }
+  
+  /* Otros estilos globales que se apliquen a toda la aplicación */
+  

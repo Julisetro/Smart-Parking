@@ -1,0 +1,154 @@
+/* dashboard.css */
+
+/* Estilos generales para el contenedor del dashboard */
+.dashboard {
+    padding: var(--padding-base);
+    background-color: #f7f7f7;
+  }
+  
+  /* Estilos para la sección "hero" (panel superior) */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: var(--color-fondo); /* Fondo blanco */
+    padding: var(--padding-base);
+    margin-bottom: var(--margin-base);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Área de Perfil */
+  .profile-area {
+    flex: 1;
+  }
+  
+  .profile-area .greeting {
+    font-size: var(--font-size-heading); /* 32px definido en variables.css */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .profile-area .id-number {
+    font-size: var(--font-size-paragraph); /* 16px */
+    margin-bottom: 5px;
+  }
+  
+  .profile-area .profile-settings {
+    font-size: var(--font-size-paragraph);
+    text-decoration: underline;
+    color: var(--color-acento);
+    transition: color var(--transition-speed);
+  }
+  
+  .profile-area .profile-settings:hover {
+    color: var(--color-hover);
+  }
+  
+  /* Área de Resumen de Actividad y CTA */
+  .activity-summary {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .activity-card {
+    background-color: var(--color-light);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: var(--margin-base);
+  }
+  
+  .activity-card h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .activity-card .reservation-info {
+    font-size: var(--font-size-paragraph);
+    margin-top: 10px;
+  }
+  
+  /* Botón CTA para realizar reserva */
+  .cta-reserve {
+    background-color: var(--color-acento);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: var(--border-radius);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .cta-reserve:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* Sección de Notificaciones */
+  .notifications {
+    background-color: var(--color-fondo);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-base);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications h2 {
+    font-size: var(--font-size-subheading); /* 24px */
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .notifications ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .notifications ul li {
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  /* Sección de Horario de Funcionamiento */
+  .operating-hours {
+    background-color: var(--color-fondo);
+    padding: var(--padding-base);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .operating-hours h2 {
+    font-size: var(--font-size-subheading);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .operating-hours p {
+    font-size: var(--font-size-paragraph);
+    margin: 5px 0;
+  }
+  
+  .operating-hours .open-status {
+    font-weight: bold;
+    color: var(--color-acento);
+  }
+  
+  /* Ajustes responsivos para dispositivos móviles */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      align-items: center;
+    }
+    .activity-summary {
+      align-items: center;
+    }
+  }
+  

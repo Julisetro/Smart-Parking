@@ -1,0 +1,115 @@
+/* index.css */
+
+/* Reset y fuente base */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-base);
+    height: 100%;
+  }
+  
+  /* Degradado de fondo */
+  body {
+    background: linear-gradient(135deg, var(--color-acento), #ffffff);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header fijo */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--color-acento);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;           /* Menos padding vertical */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo-img {
+    height: 36px;                 /* Ligero ajuste */
+    margin-right: 10px;
+  }
+  
+  .header-container h1 {
+    font-size: 1.75rem;           /* 28px aprox. */
+    color: #fff;
+    margin: 0;
+  }
+  
+  /* Main ocupa todo el espacio restante */
+  main.landing {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;                /* Padding más contenido */
+    margin-top: 60px;             /* Altura del header */
+    margin-bottom: 40px;          /* Para dejar espacio al footer */
+  }
+  
+  /* Títulos y párrafos */
+  .landing h2 {
+    font-size: 2rem;              /* 32px */
+    color: var(--color-texto);
+    margin: 0 0 10px;
+  }
+  
+  .landing p {
+    font-size: 1.125rem;          /* 18px */
+    color: var(--color-texto);
+    margin: 0 0 30px;
+    max-width: 600px;             /* Evita líneas demasiado largas */
+    line-height: 1.5;
+  }
+  
+  /* Botones agrupados */
+  .landing-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .landing-buttons .btn {
+    font-size: 1rem;              /* 16px */
+    padding: 14px 28px;           /* Botones un poco más altos */
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background-color var(--transition-speed), color var(--transition-speed);
+  }
+  
+  /* Botón sólido */
+  .landing-buttons .btn {
+    background-color: var(--color-acento);
+    color: #fff;
+    border: none;
+  }
+  
+  .landing-buttons .btn:hover {
+    background-color: var(--color-hover);
+  }
+  
+  /* Botón outline */
+  .landing-buttons .btn-outline {
+    background-color: transparent;
+    color: var(--color-acento);
+    border: 2px solid var(--color-acento);
+  }
+  
+  .landing-buttons .btn-outline:hover {
+    background-color: var(--color-acento);
+    color: #fff;
+  }
+  
+  

@@ -1,0 +1,135 @@
+/* login.css */
+
+/* Fondo con degradado y configuración global para el body */
+body {
+    background: linear-gradient(135deg, var(--color-acento), #ffffff);
+    font-family: var(--font-family-base);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Contenedor principal para centrar el contenido de login */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  /* Estilos para el logotipo */
+  .login-logo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-logo img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Tarjeta de Login */
+  .login-card {
+    background-color: var(--color-fondo);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .login-card h1 {
+    font-size: var(--font-size-heading); /* Por ejemplo, 32px */
+    margin-bottom: 20px;
+    color: var(--color-texto);
+  }
+  
+  /* Formulario de Login */
+  .login-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: var(--font-size-paragraph);
+    margin-bottom: 5px;
+    display: block;
+    color: var(--color-texto);
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-paragraph);
+  }
+  
+  /* Opciones del formulario: checkbox y enlaces, con mejoras de distribución y responsividad */
+  .form-options {
+    display: flex;
+    flex-wrap: wrap;              /* Permite ajustar los elementos en varias líneas en pantallas pequeñas */
+    align-items: center;
+    justify-content: space-between; /* En pantallas grandes, separa el checkbox a la izquierda y los enlaces a la derecha */
+    margin-top: 10px;
+    gap: 10px;                   /* Espacio entre elementos */
+  }
+  
+  .checkbox-group {
+    display: inline-flex;       /* Asegura que input y label se ubiquen en la misma línea */
+    align-items: center;        /* Centra verticalmente input y label */
+    gap: 5px;                   /* Espacio horizontal entre el checkbox y el texto */
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+  margin: 0;                  /* Elimina márgenes por defecto */
+  vertical-align: middle;     /* Alineación vertical */
+}
+
+.checkbox-group label {
+    display: inline-block;      /* Mantiene label en la misma línea */
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;           /* Ajusta si necesitas más o menos altura */
+    vertical-align: middle;
+  }
+  
+  /* Contenedor de enlaces de ayuda */
+  .help-links {
+    display: flex;
+    gap: 15px;                   /* Espacio entre los enlaces */
+  }
+  
+  .help-links a {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-size: var(--font-size-small);
+  }
+  
+  .help-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Botón de Iniciar Sesión */
+  .login-button {
+    background-color: var(--color-acento);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: var(--font-size-paragraph);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-speed);
+  }
+  
+  .login-button:hover {
+    background-color: var(--color-hover);
+  }
+  

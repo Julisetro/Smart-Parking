@@ -1,0 +1,21 @@
+<div id="reservation-details-overlay" class="overlay" style="display: none;">
+    <div class="overlay-content">
+      <h2>Detalles de la Reserva</h2>
+      <div class="reservation-details-content">
+        <p><strong>Fecha Completa:</strong> <span id="detail-full-date"></span></p>
+        <p><strong>Hora de Reserva:</strong> <span id="detail-start-time"></span></p>
+        <p><strong>Hora de Salida:</strong> <span id="detail-end-time"></span></p>
+        <p><strong>Tarifa:</strong> <span id="detail-fare"></span></p>
+        <p><strong>Total:</strong> <span id="detail-total"></span></p>
+        <p><strong>Promociones Aplicadas:</strong> <span id="detail-promotions"></span></p>
+        <p><strong>Estado:</strong> <span id="detail-status"></span></p>
+      </div>
+      <div class="overlay-buttons">
+        <button type="button" id="details-close">Cerrar</button>
+        <!-- Este botón se mostrará condicionalmente, si la reserva es actual y está pendiente -->
+        <button type="button" id="details-view-qr" style="display: none;">Ver Código QR</button>
+      </div>
+    </div>
+  </div>
+  
+  
